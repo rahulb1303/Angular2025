@@ -1,1 +1,32 @@
-<h3>Started learning {{title}}</h3>
+<h3>Started learning Angular19</h3>
+@for(product of productList; track product.id){
+<ul>
+  <li>{{ product.title }}</li>
+  <li>{{ product.price }}</li>
+  <li>{{ product.rating }}</li>
+  <li><img src="{{ product.thumbnail }}" /></li>
+</ul>
+}
+
+<!-- 
+<ul>
+  <li><a routerLink="/about">About</a></li>
+  <li><a routerLink="/contact">Contact</a></li>
+  <li><a routerLink="/login">Login</a></li>
+</ul>
+<router-outlet />
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <input type="text" placeholder="enter name" formControlName="name" />
+  <br /><br />
+  <input type="text" placeholder="enter email" formControlName="email" />
+  <br /><br />
+  <input type="text" placeholder="enter password" formControlName="password" />
+  <br /><br />
+  <button type="submit">Submit</button>
+</form>
+
+<h2>
+  Your name is {{ allValue.name }} and email is {{ allValue.email }} and
+  password is {{ allValue.password }}
+</h2> -->
